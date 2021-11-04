@@ -373,7 +373,7 @@ Next i
 
 As seen below, the performance of the subroutine is average at best! The analysis alone for 2017 took ```1.31 seconds```, and 2018 took ```1.42 seconds``` to complete. For there only being 12 stock options we are gathering data for, this is quite slow.  
   
-![2017 OC Performance]([https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Performance.png](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Performance.png))
+![2017 OC Performance](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Performance.png)
 
   
 
@@ -390,7 +390,7 @@ With the new way of handling data by using arrays, our performance has increased
 
   
 
-![2018 Refact Performance]([https://github.com/StickySitch/stock-analysis./blob/main/Resources/2018/Refactored2018Performance.png](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2018/Refactored2018Performance.png))
+![2018 Refact Performance](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2018/Refactored2018Performance.png)
 
   
 
