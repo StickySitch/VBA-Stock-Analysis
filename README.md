@@ -15,7 +15,7 @@ Now, since we are looking into other stock options, we will have a much larger d
 
 # Results
 
-## 2017 Analysis
+## 2017 Stock Analysis
 
 When looking at the “All Stocks (2017)” table below, you can see that 2017 was actually quite a successful year for green energy stocks. All but one of the stock options are in the green meaning they had a positive return!
 
@@ -23,9 +23,9 @@ When looking at the “All Stocks (2017)” table below, you can see that 2017 w
 
 #### 2017 Stock Option Results
 
-![2017 Stock Option Results]([https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Results.png](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Results.png))
+![2017 Stock Option Results](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Results.png)
 
-  
+
   
 
 ## 2018 Stock Analysis
@@ -43,6 +43,7 @@ Below you will see a much different picture. As you can see, 2018 was a terrible
 ## The Code
 
 Like I mentioned earlier, Steve wants to expand his stock option research by venturing into other areas. To do this, I needed to refactor our old “AllStockAnalysis” subroutine to be more efficient.  
+  
   
 ### The original code  
 When working with the original data set (green energy stocks), we used a ```nested for loop``` first to create a variable called ```ticker``` that is used as a reference for the current ticker we are gathering data for.
