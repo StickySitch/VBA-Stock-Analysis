@@ -1,41 +1,40 @@
+# Project Overview
 
-#Project Overview
-
-##Background
+## Background
 
 In order to help my client Steve, I have created a subroutine (macro) that calculates the total daily trade volume and percentage return. While looking into green energy stocks, Steve has decided to research other stock options in order to diversify his parents portfolio.
 
   
 
-##Purpose of Analysis
+## Purpose of Analysis
 
 Now, since we are looking into other stock options, we will have a much larger data set to gather and calculate data from. Knowing this, we needed to refactor our “AllStockAnalysis” subroutine in order to handle the increased data set.
 
   
   
 
-#Results
+# Results
 
-##2017 Analysis
+## 2017 Analysis
 
 When looking at the “All Stocks (2017)” table below, you can see that 2017 was actually quite a successful year for green energy stocks. All but one of the stock options are in the green meaning they had a positive return!
 
   
 
-####2017 Stock Option Results
+#### 2017 Stock Option Results
 
 ![2017 Stock Option Results]([https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Results.png](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2017/AllStocks2017Results.png))
 
   
   
 
-##2018 Stock Analysis
+## 2018 Stock Analysis
 
 Below you will see a much different picture. As you can see, 2018 was a terrible year for the green energy stocks we are looking at. All but two are in the red this time! This means that only two of the twelve green energy stocks had a positive return this year. Not looking good at all!
 
   
 
-####2018 Stock Option Results
+#### 2018 Stock Option Results
 
 ![2018 Stock Option Results](https://github.com/StickySitch/stock-analysis./blob/main/Resources/2018/AllStocks2018Results.png)
 
@@ -45,7 +44,7 @@ Below you will see a much different picture. As you can see, 2018 was a terrible
 
 Like I mentioned earlier, Steve wants to expand his stock option research by venturing into other areas. To do this, I needed to refactor our old “AllStockAnalysis” subroutine to be more efficient.  
   
-###The original code  
+### The original code  
 When working with the original data set (green energy stocks), we used a ```nested for loop``` first to create a variable called ```ticker``` that is used as a reference for the current ticker we are gathering data for.
 
   
@@ -156,19 +155,19 @@ Next i
 
   
 
-####The Inner Loop
+#### The Inner Loop
 
 The inner loop is where the bulk of the work is happening; Going row by row, checking for the current ticker symbol using the ```ticker``` reference mentioned earlier. Once the ticker is found the following data is collected: Trade volumes, the years starting price, and ending price. Once the data is collected for the reference ticker, the inner loop is left and the subroutine continues onto the calculations. The calculations will populate the correct cells and return the following: Total trade volume and the years return percentage. The subroutine will continue going through each ticker in the array collecting and displaying the same information.
 
   
 
-###The Refactored Code
+### The Refactored Code
 
   
 
 In order to handle the much larger data set, I have made some changes to the code. Instead of using a ```nested loop```, this time I have separate loops. To keep track of the data I have created a ```tickerIndex``` variable, letting our loop know what ticker value we are looking at. Along with this, I have instantiated 3 output arrays: ```tickerVolumes```, ```tickerStartingPrice```, and ```tickerEndingPrice```. With these output arrays, data can be assigned to the correct ticker quickly and efficiently.  
   
-####The First Loop
+#### The First Loop
 
   
 
@@ -199,7 +198,7 @@ In our first loop we are simply assigning a value of 0 to each of the tickers co
   
   
 
-####The Second Loop
+#### The Second Loop
 
   
 
@@ -256,7 +255,7 @@ Above you can see the full loop. When going through it, you can see it is very s
   
   
 
-####The Third Loop
+#### The Third Loop
 
   
 
@@ -293,7 +292,7 @@ Above you can see the loop going through each ticker in the ```tickers``` array,
 
   
 
-####Formatting
+#### Formatting
 
   
 
@@ -369,7 +368,7 @@ Next i
 
 ## Performance
 
-###Original Code
+### Original Code
 
 As seen below, the performance of the subroutine is average at best! The analysis alone for 2017 took ```1.31 seconds```, and 2018 took ```1.42 seconds``` to complete. For there only being 12 stock options we are gathering data for, this is quite slow.  
   
@@ -382,7 +381,7 @@ As seen below, the performance of the subroutine is average at best! The analysi
   
   
 
-###Refactored Code
+### Refactored Code
 
 With the new way of handling data by using arrays, our performance has increased greatly! Below you can see that there is about ```1.2 seconds``` shaved off of the completion time for both 2017 and 2018.  
   
@@ -398,7 +397,7 @@ Something of note is that even though I added formatting to the refactored code,
 
   
 
-#Summary
+# Summary
 
 To summarize all of this, I think it is important to note the advantages of refactoring. Clearly there has been a huge improvement in performance. Refactoring in general provides a great opportunity to increase the efficiency of the code which in return decreases the time it takes to collect and calculate data. Time is money! Careful though, refactoring also opens the opportunity for mistakes. These mistakes can cause stability issues making the code worse than when it started.
 
